@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" "3.0.0"
+github "onevcat/Kingfisher" "1.6.1"
+github "JohnLui/Pitaya" "v1.1"
+github "SwiftyJSON/SwiftyJSON" "2.3.0"
