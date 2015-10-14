@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.76862745099999996" green="0.45882352939999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fah-nv-asj">
-                                    <size key="itemSize" width="180" height="250"/>
+                                    <size key="itemSize" width="157" height="196"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -32,13 +32,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="180" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="157" height="196"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P2C-Gq-ssn">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="250"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="196"/>
                                                     </variation>
                                                 </imageView>
                                             </subviews>
@@ -81,10 +81,10 @@
                                 <exclude reference="VM3-3F-hDG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Azm-G4-JLO"/>
                                 <exclude reference="Zdv-QB-rYm"/>
                                 <exclude reference="d5v-wX-F6X"/>
                                 <exclude reference="iLW-3a-DbV"/>
-                                <exclude reference="Azm-G4-JLO"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -92,10 +92,10 @@
                                 <include reference="VM3-3F-hDG"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Azm-G4-JLO"/>
                                 <include reference="Zdv-QB-rYm"/>
                                 <include reference="d5v-wX-F6X"/>
                                 <include reference="iLW-3a-DbV"/>
-                                <include reference="Azm-G4-JLO"/>
                             </mask>
                         </variation>
                     </view>
@@ -109,7 +109,7 @@
             </objects>
             <point key="canvasLocation" x="-400.5" y="-183"/>
         </scene>
-        <!--详情解析-->
+        <!--今日展现-->
         <scene sceneID="xPc-ht-bO1">
             <objects>
                 <viewController id="Xfk-Wl-Ncg" customClass="DetailsViewController" customModule="SoGank" customModuleProvider="target" sceneMemberID="viewController">
@@ -118,18 +118,56 @@
                         <viewControllerLayoutGuide type="bottom" id="quZ-Ga-i0A"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FJn-fl-Hvp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-01-KHZ">
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="200" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-01-KHZ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailsCell" id="bwm-kb-Uhz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailsCell" rowHeight="200" id="bwm-kb-Uhz" customClass="DetailsCell" customModule="SoGank" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bwm-kb-Uhz" id="47j-fD-cO5">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gDc-0m-lfN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gDc-0m-lfN" firstAttribute="leading" secondItem="47j-fD-cO5" secondAttribute="leading" id="E1X-y7-imK"/>
+                                                <constraint firstAttribute="bottom" secondItem="gDc-0m-lfN" secondAttribute="bottom" id="Ix3-0m-jph"/>
+                                                <constraint firstItem="gDc-0m-lfN" firstAttribute="top" secondItem="47j-fD-cO5" secondAttribute="top" id="KD7-Iy-Ut7"/>
+                                                <constraint firstAttribute="trailing" secondItem="gDc-0m-lfN" secondAttribute="trailing" id="bvi-aM-t8g"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="gDc-0m-lfN"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="E1X-y7-imK"/>
+                                                    <exclude reference="Ix3-0m-jph"/>
+                                                    <exclude reference="KD7-Iy-Ut7"/>
+                                                    <exclude reference="bvi-aM-t8g"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="gDc-0m-lfN"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="E1X-y7-imK"/>
+                                                    <include reference="Ix3-0m-jph"/>
+                                                    <include reference="KD7-Iy-Ut7"/>
+                                                    <include reference="bvi-aM-t8g"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailImage" destination="gDc-0m-lfN" id="Bq8-Cd-5bm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -150,10 +188,10 @@
                                 <exclude reference="Pcq-01-KHZ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Rei-yB-kqH"/>
                                 <exclude reference="AMY-NH-CQj"/>
                                 <exclude reference="N1X-Xc-9jA"/>
                                 <exclude reference="OYg-hP-JF3"/>
-                                <exclude reference="Rei-yB-kqH"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -161,21 +199,77 @@
                                 <include reference="Pcq-01-KHZ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Rei-yB-kqH"/>
                                 <include reference="AMY-NH-CQj"/>
                                 <include reference="N1X-Xc-9jA"/>
                                 <include reference="OYg-hP-JF3"/>
-                                <include reference="Rei-yB-kqH"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="详情解析" id="VTn-Bf-6aT"/>
+                    <navigationItem key="navigationItem" title="今日展现" id="VTn-Bf-6aT"/>
                     <connections>
                         <outlet property="detailsTable" destination="Pcq-01-KHZ" id="fVN-5A-XBn"/>
+                        <segue destination="BoC-Rq-RpY" kind="show" identifier="webDetails" id="6bi-IA-IDm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGl-S2-jJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="357" y="-183"/>
+        </scene>
+        <!--详情解析-->
+        <scene sceneID="SOn-ov-FKG">
+            <objects>
+                <viewController id="BoC-Rq-RpY" customClass="WebViewController" customModule="SoGank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P2X-6E-hx3"/>
+                        <viewControllerLayoutGuide type="bottom" id="bJc-k5-Hxe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0qP-VW-igB">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tep-9q-0y4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tep-9q-0y4" secondAttribute="trailing" id="Cwp-aS-gAG"/>
+                            <constraint firstItem="bJc-k5-Hxe" firstAttribute="top" secondItem="tep-9q-0y4" secondAttribute="bottom" id="PfU-NG-gC6"/>
+                            <constraint firstItem="tep-9q-0y4" firstAttribute="top" secondItem="P2X-6E-hx3" secondAttribute="bottom" id="gp1-EE-YpS"/>
+                            <constraint firstItem="tep-9q-0y4" firstAttribute="leading" secondItem="0qP-VW-igB" secondAttribute="leading" id="jlI-LR-aIO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="tep-9q-0y4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Cwp-aS-gAG"/>
+                                <exclude reference="gp1-EE-YpS"/>
+                                <exclude reference="jlI-LR-aIO"/>
+                                <exclude reference="PfU-NG-gC6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="tep-9q-0y4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Cwp-aS-gAG"/>
+                                <include reference="gp1-EE-YpS"/>
+                                <include reference="jlI-LR-aIO"/>
+                                <include reference="PfU-NG-gC6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="详情解析" id="Nzd-ye-B5U"/>
+                    <connections>
+                        <outlet property="sWebView" destination="tep-9q-0y4" id="Paw-QL-nYF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfE-JM-U86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179" y="-183"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XfC-pb-36j">

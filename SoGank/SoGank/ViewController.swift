@@ -72,7 +72,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     // 实现UICollectionViewDataSource
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
 
-        let date = ganks[indexPath.row].createdAt//"2015-10-10T03:58:17.761Z"
+        let date = ganks[indexPath.row].publishedAt//"2015-10-10T03:58:17.761Z"
         if date.characters.count > 10 {
             let ndate = (date as NSString).substringToIndex(10)
             pdate = ndate.stringByReplacingOccurrencesOfString("-", withString: "/", options: .LiteralSearch, range: nil)

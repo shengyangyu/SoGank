@@ -8,24 +8,35 @@
 
 import UIKit
 import Foundation
+import Kingfisher
 
 class DetailsCell: UITableViewCell {
-
-    var title: UILabel
+    
+    @IBOutlet weak var detailImage: UIImageView!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        title = UILabel()
+        //detailImage = UIImageView.init()
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        //detailImage = UIImageView.init()
+        super.init(coder: aDecoder)
     }
     
     func bindData(entity: SGBaseEntiy) -> Void {
-        let titleString = entity.desc
-        if titleString.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 0 {
-            title.text = titleString
+        self.detailImage.hidden = false;
+        self.textLabel?.text = ""
+        let urlString = entity.url
+        if urlString.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) != 0 {
+            if let url = NSURL(string: urlString) {
+                detailImage.kf_setImageWithURL(url, placeholderImage: nil, optionsInfo: nil, completionHandler: {
+                    /*[weak self]*/(image, error, cacheType, imageURL) -> () in
+                    /*UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseIn, animations: { () -> Void in
+                        self?.detailImage.alpha = 1
+                        }, completion: nil)*/
+                    })
+            }
         }
     }
     override func setSelected(selected: Bool, animated: Bool) {

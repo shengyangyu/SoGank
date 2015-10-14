@@ -18,6 +18,7 @@
 		7AC333B11BCBA38A000DCC6D /* GanksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC333B01BCBA38A000DCC6D /* GanksCell.swift */; settings = {ASSET_TAGS = (); }; };
 		7AC333B31BCBAB03000DCC6D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC333B21BCBAB03000DCC6D /* DetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		7AC333B51BCBBCB6000DCC6D /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC333B41BCBBCB6000DCC6D /* DetailsCell.swift */; settings = {ASSET_TAGS = (); }; };
+		7AC333E41BCE2E1A000DCC6D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC333E31BCE2E1A000DCC6D /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7AC333B01BCBA38A000DCC6D /* GanksCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GanksCell.swift; sourceTree = "<group>"; };
 		7AC333B21BCBAB03000DCC6D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		7AC333B41BCBBCB6000DCC6D /* DetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		7AC333E31BCE2E1A000DCC6D /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				7AB41A291BC8F29B00584734 /* AppDelegate.swift */,
 				7AB41A2B1BC8F29B00584734 /* ViewController.swift */,
 				7AC333B21BCBAB03000DCC6D /* DetailsViewController.swift */,
+				7AC333E31BCE2E1A000DCC6D /* WebViewController.swift */,
 				7AC333B01BCBA38A000DCC6D /* GanksCell.swift */,
 				7AC333B41BCBBCB6000DCC6D /* DetailsCell.swift */,
 				7AB41A2D1BC8F29B00584734 /* Main.storyboard */,
@@ -197,6 +200,7 @@
 				7AB41A421BC90A8000584734 /* SGBaseEntiy.swift in Sources */,
 				7AB41A401BC905F200584734 /* SGUtils.swift in Sources */,
 				7AC333B31BCBAB03000DCC6D /* DetailsViewController.swift in Sources */,
+				7AC333E41BCE2E1A000DCC6D /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
